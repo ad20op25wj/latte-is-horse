@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>24시 카페 찾기 - 올밤</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <link rel="stylesheet" href="../css/index.css" />
+  <script src="../js/mode_change.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <span id="sidenavbtn" onclick="openNav()">&#9776;</span>
+    <img id="titleImg" src="../image/awake_owl.png" alt="an awake owl" height=96px>
+    <a href="./index.html"><p id="serviceName">올빼미들의 밤</p></a>
+    <p id="serviceSlogan">남들 다 잘 때도 놀고, 일하고, 공부해야 하니까</p>
+  </header>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="./board/cafe.html">카페</a>
+    <a href="./board/cafe.html">애견카페 / 동물병원</a>
+    <a href="./board/cafe.html">식당 / 술집</a>
+    <a href="./board/cafe.html">스터디카페 / 독서실</a>
+    <div id="sidenavBottomBox">
+      <a href="inquiry.html">정보수정 / 문의하기</a>
+      <button class="modebtn" onclick="setDayMode()">낮 모드</button>
+      <button class="modebtn" onclick="setNightMode()">밤 모드</button>
+    </div>
+  </div>
+
+  <section>
+    <div class="itemContainer">
+      <a href="./board/cafe.html"><div class="item">카페</div></a>
+      <a href="./board/cafe.html"><div class="item">애견카페 / 동물병원</div></a>
+      <a href="./board/cafe.html"><div class="item">식당 / 술집</div></a>
+      <a href="./board/cafe.html"><div class="item">스터디카페 / 독서실</div></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>ⓒ ad20op25wj@gmail.com</p>
+  </footer>
+
+</body>
+
+</html>

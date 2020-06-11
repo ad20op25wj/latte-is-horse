@@ -1,0 +1,30 @@
+@import url('./sidenav.css');
+
+header {
+  background-color: midnightblue;
+}
+
+#sidenavbtn {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#serviceName {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: white;
+  font-family: 'Stylish', sans-serif;
+  font-size: 3em;
+}
+
+#serviceSlogan {
+  padding-bottom: 8px;
+  color: yellow;
+  font-family: 'Poor Story', cursive;
+  font-size: 1em;
+  font-weight: bold;
+}
