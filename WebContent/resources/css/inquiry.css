@@ -1,0 +1,45 @@
+form {
+  margin:16px 16px 0px 16px
+}
+
+section .container {
+  margin-bottom:16px
+}
+
+.description {
+  margin-top:0px;
+  margin-bottom:8px
+}
+
+.inputBox {
+  display:block;
+  margin:0px auto 0px auto;
+  width:100%;
+  text-align:left;
+  padding: 6px 6px;
+  background-color:white;
+  border-color:#595959;
+  border-style:solid;
+  border-width:1.5px;
+  border-radius:3px
+}
+
+.inputBox::placeholder {
+  color:lightgray
+}
+
+.inputBox:focus {
+  background-color:lightcyan;
+  border-color:black;
+  color:black
+}
+
+textarea {
+  height:160px;
+  resize:none
+}
+
+#sendbtn {
+  margin: 0px auto 0px auto;
+  display:block
+}

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Stylish&family=Sunflower:wght@300&display=swap');
+
+/********** Global **********/
+/****************************/
+/****************************/
+* {
+  color:#595959;
+  font-family:'Sunflower',sans-serif;
+  font-size:1em
+}
+
+.container {
+  padding:8px
+}
+/********************************/
+/********************************/
+/********** End Global **********/
+
+body {
+  margin:0px;
+  background-color:beige
+}
+
+/********** Header **********/
+/****************************/
+/****************************/
+header {
+  color:white;
+  background-color:navy
+}
+
+header p {
+  margin:0px 0px 16px 0px;
+  text-align:center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+#sidenavbtn_container {
+  margin:0px 0px 0px 8px;
+  text-align:left
+}
+
+#sidenavbtn {
+  font-size:32px;
+  cursor:pointer;
+  color:white
+}
+
+#mainServiceName {
+  font-family:'Stylish',sans-serif;
+  font-size:48px;
+  color:white
+}
+
+#serviceSlogan {
+  color: yellow;
+  font-family:'Poor Story',cursive;
+  font-size:1em;
+  font-weight:bold
+}
+
+#subServiceName {
+  font-family:'Stylish',sans-serif;
+  font-size:32px;
+  color:white
+}
+
+#subheader_container p {
+  margin:0px
+}
+
+#subheader_container #sidenavbtn {
+  position:absolute;
+  top:5.334px;
+  left:16px
+}
+/********************************/
+/********************************/
+/********** End Header **********/
+
+/********** Navigation **********/
+/********************************/
+/********************************/
+.sidenav {
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:3;
+  top:0;
+  left:0;
+  background-color:lightskyblue;
+  overflow-x:hidden;
+  transition:0.5s;
+}
+
+.sidenav a {
+  text-decoration:none
+}
+
+.sidenav .container {
+  margin:70px 0px 0px 14px;
+}
+
+.sidenav .container a {
+  margin:14px 0px 14px 0px;
+  font-size:24px;
+  display:block;
+  transition:0.3s;
+  text-align:left;
+  white-space:nowrap;
+}
+
+.sidenav a:hover {
+  color:white;
+}
+
+.sidenav .closebtn {
+  position:absolute;
+  top:8px;
+  right:16px;
+  font-size:48px;
+  padding:0;
+}
+
+.inquirybtn {
+  display:block;
+  padding:2px 14px;
+  margin:35px auto 0px auto;
+  font-size:12px;
+  background-color:white;
+  border:none;
+  border-radius:10px;
+}
+
+.inquirybtn:hover {
+  text-decoration:none;
+  box-shadow:2px 2px;
+}
+/************************************/
+/************************************/
+/********** End Navigation **********/
+
+footer {
+  margin-top:16px;
+  text-align:center;
+  font-size:12px
+}
