@@ -8,8 +8,8 @@
 <title>24시 카페 찾기-올밤</title>
 </head>
 <body>
-  <%@ include file="sub_header.jsp"%>
-  <%@ include file="nav.jsp"%>
+  <jsp:include page="sub_header.jsp"/>
+  <jsp:include page="nav.jsp"/>
   <section class="container">
     <form action="" method="POST">
       <div class="container">
@@ -27,6 +27,6 @@
       <input id="sendbtn" type="submit" value="보내기"/>
     </form>
   </section>
-  <%@ include file="footer.jsp"%>
+  <jsp:include page="footer.jsp"/>
 </body>
 </html>

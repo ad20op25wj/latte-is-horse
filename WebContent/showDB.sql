@@ -1,0 +1,1 @@
+select * from store where category = 1;
