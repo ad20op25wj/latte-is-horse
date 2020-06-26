@@ -12,9 +12,9 @@ public class StoreDao {
 	
 	public StoreDao() {
 		try {
-			String dbURL="jdbc:mysql://localhost:3306/owlbam?serverTimezone=UTC";
-			String dbID="root";
-			String dbPassword="1234";
+			String dbURL="jdbc:mysql://webprodb.cnvfwzcge5ku.ap-northeast-2.rds.amazonaws.com/owlbam";
+			String dbID="webpro1";
+			String dbPassword="webpro1357!";
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
 		} catch (Exception e) {
