@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="resources/css/all-in-one.css"/>
 <link rel="stylesheet" href="resources/css/store.css"/>
 <script type="text/javascript" src="resources/js/nav.js"></script>
+<script type="text/javascript" src="resources/js/comment_validation.js"></script>
 <meta name="viewport" content="width=device-width"/>
 <title>24시 카페 찾기-올밤</title>
 </head>
@@ -29,14 +30,14 @@
     <hr/>
     <div class="lowercontainer">
       <div class="input_comment">
-        <form name="newComment" action="" method="POST">
+        <form name="newComment" action="processAddComment.jsp?id=<%=request.getParameter("id")%>" method="POST">
           <div class="inputcontainer">
             <input id="inputrating" class="inputBox" type="text" name="rating" placeholder="별점" required/>
             <span id="perfect"> / 5.0</span>
-            <input id="sendbtn" type="submit" value="보내기"/>
+            <input id="sendbtn" type="submit" value="보내기" key="button" onclick="CheckAddComment()"/>
           </div>
           <div class="inputcontainer">
-            <textarea class="inputBox" placeholder="코멘트를 남겨주세요" required></textarea>
+            <textarea class="inputBox" name="content" placeholder="코멘트를 남겨주세요" required></textarea>
           </div>
         </form>
       </div>

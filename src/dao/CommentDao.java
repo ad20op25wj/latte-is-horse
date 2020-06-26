@@ -45,4 +45,21 @@ public class CommentDao {
         
 		return list;
 	}
+	
+	public int write(int store_id, float rating, String content) { 
+
+		String SQL = "insert comment_t (store_id, rating, content) value (?, ?, ?)";
+
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1, store_id);
+			pstmt.setFloat(2, rating);
+			pstmt.setString(3, content);
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return -1;
+	}
 }
