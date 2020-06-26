@@ -33,10 +33,12 @@ public class StoreDao {
 			
 			while (rs.next()) {
 				Store store = new Store();
+				store.setId(rs.getInt("id"));
 				store.setLatitude(rs.getDouble("latitude"));
 				store.setLongitude(rs.getDouble("longitude"));
 				store.setName(rs.getString("name"));
 				store.setRating(rs.getFloat("rating"));
+				store.setAddress(rs.getString("address"));
 				list.add(store);
 			}
 		} catch (Exception e) {
@@ -44,5 +46,29 @@ public class StoreDao {
 		}
         
 		return list;
+	}
+	
+	public Store getStoreById(int id) {
+		String SQL = "select * from store where id = ?";
+		Store store = new Store();
+		
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1, id);
+			rs = pstmt.executeQuery();
+			
+			if (rs.next()) {
+				store.setId(rs.getInt("id"));
+				store.setLatitude(rs.getDouble("latitude"));
+				store.setLongitude(rs.getDouble("longitude"));
+				store.setName(rs.getString("name"));
+				store.setRating(rs.getFloat("rating"));
+				store.setAddress(rs.getString("address"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+        
+		return store;
 	}
 }

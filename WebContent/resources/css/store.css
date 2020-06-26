@@ -1,0 +1,80 @@
+#name {
+  margin:16px 0px 24px 0px;
+  color:navy;
+  font-size:32px;
+  font-weight:bold
+}
+
+.storedesc {
+  margin-top:8px
+}
+
+.uppercontainer {
+  padding: 16px 8px 32px 8px
+}
+
+.lowercontainer {
+  padding: 32px 8px 0px 8px
+}
+
+.inputBox {
+  margin:0px auto 0px auto;
+  text-align:left;
+  padding:2px 6px;
+  background-color:white;
+  border-color:#595959;
+  border-style:solid;
+  border-width:1.5px;
+  border-radius:3px
+}
+
+.inputBox::placeholder {
+  color:lightgray
+}
+
+.inputBox:focus {
+  background-color:lightcyan;
+  border-color:black;
+  color:black
+}
+
+textarea {
+  width:100%;
+  resize:none
+}
+
+#sendbtn {
+  float:right
+}
+
+#inputrating {
+  text-align:center;
+  width:64px;
+  margin-bottom:8px
+}
+
+#perfect {
+  font-size:20px
+}
+
+form {
+  margin:0px
+}
+
+.comment {
+  margin-top:16px
+}
+
+#rating2 {
+  color:deeppink;
+  font-weight:bold;
+  margin-right:16px
+}
+
+form {
+  margin-bottom:40px
+}
+
+.cmt {
+  line-height:22px
+}

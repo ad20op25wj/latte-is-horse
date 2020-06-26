@@ -34,6 +34,7 @@
 	%>
 	  <div class="card" onclick="moveMark(<%=list.get(i).getLatitude()%>, <%=list.get(i).getLongitude()%>)">
 	  	<%=list.get(i).getName()%> / <%=list.get(i).getRating()%>
+	  	<a id="gobtn" href="store.jsp?id=<%=list.get(i).getId()%>">Go!</a>
 	  </div>
 	<%
     	}
