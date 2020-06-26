@@ -10,7 +10,7 @@ public class StoreDao {
 	private Connection conn;
 	private ResultSet rs;
 	
-	public StoreDao() {		
+	public StoreDao() {
 		try {
 			String dbURL="jdbc:mysql://localhost:3306/owlbam?serverTimezone=UTC";
 			String dbID="root";

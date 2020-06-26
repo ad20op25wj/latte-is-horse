@@ -18,7 +18,26 @@
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7c1be7ab63740e1db8a4da1568e4658d"></script>
 	<script type="text/javascript" src="resources/js/kakao_map.js"></script>
 	<div class="cardBox">
-	  <div class="card" onclick="moveMark(35.855513, 128.552350)">XXX 카페 | 5.0</div>
+	<%
+		String cat = request.getParameter("cat");
+		StoreDao storeDao = new StoreDao();
+    	ArrayList<Store> list = null;
+    	if (cat.equals("cafe"))
+    		list = storeDao.getList(1);
+    	else if (cat.equals("food"))
+    		list = storeDao.getList(2);
+    	else if (cat.equals("pet"))
+    		list = storeDao.getList(3);
+    	else if (cat.equals("study"))
+    		list = storeDao.getList(4);
+    	for (int i=0; i<list.size(); i++) {
+	%>
+	  <div class="card" onclick="moveMark(<%=list.get(i).getLatitude()%>, <%=list.get(i).getLongitude()%>)">
+	  	<%=list.get(i).getName()%> / <%=list.get(i).getRating()%>
+	  </div>
+	<%
+    	}
+	%>
 	</div>
   </section>
   <jsp:include page="footer.jsp"/>
