@@ -33,7 +33,9 @@
         <form name="newComment" action="processAddComment.jsp?id=<%=request.getParameter("id")%>" method="POST">
           <div class="inputcontainer">
             <input id="inputrating" class="inputBox" type="text" name="rating" placeholder="별점" required/>
-            <span id="perfect"> / 5.0</span>
+            <span id="perfect"> / 5.0&nbsp;</span>
+            <input class="inputBox" type="text" name="ID" placeholder="아이디" required/>
+            <input class="inputBox" type="password" name="password" placeholder="비밀번호" required/>
             <input id="sendbtn" type="submit" value="보내기" key="button" onclick="CheckAddComment()"/>
           </div>
           <div class="inputcontainer">
