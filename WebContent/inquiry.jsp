@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="resources/css/all-in-one.css"/>
 <link rel="stylesheet" href="resources/css/inquiry.css"/>
 <script type="text/javascript" src="resources/js/nav.js"></script>
+<script type="text/javascript" src="resources/js/inquiry_validation.js"></script>
 <meta name="viewport" content="width=device-width"/>
 <title>24시 카페 찾기-올밤</title>
 </head>
@@ -22,7 +23,7 @@
       </div>
       <div class="container">
         <p class="description">정보수정/ 문의 내용</p>
-        <textarea class="inputBox" id="contents" placeholder="내용을 입력해주세요" required></textarea>
+        <textarea class="inputBox" id="contents" name="contents" placeholder="내용을 입력해주세요" required></textarea>
       </div>
       <input id="sendbtn" type="submit" value="보내기" onclick="CheckAddInquiry()"/>
     </form>

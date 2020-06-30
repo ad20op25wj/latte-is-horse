@@ -1,14 +1,5 @@
 function CheckAddInquiry()
 {
-	var contents  = document.getElementById('contents');
-	
-	if(contents == null)
-	{
-		alert("문의사항을 입력하지 않으셨습니다.");
-		return false;
-	}
-	else
-	{
-		document.newInquiry.submit();
-	}
+	alert("문의사항이 전달되었습니다. 감사합니다");
+	document.newInquiry.submit();
 }
