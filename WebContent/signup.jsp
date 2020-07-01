@@ -14,7 +14,7 @@
   <section class="container">
     <form name="newUser" action="processAddUser.jsp" method="POST">
       <div class="container">
-        <p class="description">제목</p>
+        <p class="description">아이디</p>
         <input id="inputid" class="inputBox" type="text" name="ID" placeholder="아이디" required/>
       </div>
       <div class="container">
