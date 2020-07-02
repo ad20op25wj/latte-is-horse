@@ -27,7 +27,7 @@
         <p class="description">이름</p>
         <input id="inputname" class="inputBox" type="text" name="name" placeholder="아름" required></input>
       </div>
-      <input id="sendbtn" type="submit" value="가입" key="button" onclick="CheckAddpassword()"/>
+      <input id="sendbtn" type="submit" value="가입" onclick="CheckAddpassword()"/>
     </form>
   </section>
   <jsp:include page="footer.jsp"/>
